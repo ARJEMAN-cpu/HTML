@@ -1,0 +1,19 @@
+# **El Doctype**  
+detrás del doctype. Mientras trabajaban en Internet Explorer 5 para Mac, los desarrolladores de Microsoft se encontraron con un problema sorprendente. La próxima versión de su navegador había mejorado tanto su soporte de estándares que las páginas antiguas ya no se renderizaban correctamente. O más bien, se renderizaban correctamente (según las especificaciones), pero la gente esperaba que se renderizaran de forma incorrecta. Las propias páginas habían sido creadas basándose en las peculiaridades de los navegadores dominantes de la época, principalmente Netscape 4 e Internet Explorer 4. IE5/Mac era tan avanzado que llegó a romper la red.  
+# **El elemento raíz**  
+Una página HTML es una serie de elementos anidados. Toda la estructura de la página es como un árbol. Algunos elementos son "hermanos", como dos ramas que se extienden desde el mismo tronco de árbol. Algunos elementos pueden ser "hijos" de otros elementos, como una rama más pequeña que se extiende desde una rama mayor. (También funciona al revés; un elemento que contiene otros elementos se llama nodo "padre" de sus elementos hijos inmediatos, y el "antepasado" de sus nietos.) Los elementos que no tienen hijos se llaman nodos "hoja". El elemento más externo, que es el antecesor de todos los demás elementos de la página, se llama "elemento raíz". El elemento raíz de una página HTML es siempre.  
+# **Codificación de caracteres**  
+Cuando hablamos de texto en un ordenador, en realidad estamos tratando con bits y bytes, no directamente con caracteres o símbolos. La codificación de caracteres es el sistema fundamental que hace posible la visualización y el procesamiento del texto digital.  
+La codificación de caracteres es un mapa de correspondencia que traduce:  
+1. Lo que ves: El carácter o símbolo (p. ej., 'A', 'ñ', '€').  
+2. Lo que el ordenador almacena: La secuencia de bytes (unos y ceros) utilizada para representar ese carácter en la memoria o en el disco.  
+# **La Complejidad**  
+Existen cientos de codificaciones de caracteres diferentes (como ASCII, ISO-8859-1, y el ubicuo Unicode, que incluye UTF-8).  
+Secuencias de Bytes Únicas: El mismo carácter puede representarse con una secuencia de bytes diferente dependiendo de la codificación utilizada.  
+Clave de Descifrado: Por ello, la codificación actúa como una clave de descifrado. Si recibes una secuencia de bytes ("texto"), necesitas saber qué codificación se usó para poder decodificarla correctamente en los caracteres legibles y procesables.  
+En resumen, sin la codificación correcta, una secuencia de bytes no es más que un dato sin sentido que no puede mostrarse (o procesarse) correctamente como texto.  
+# **Otras relaciones de enlace en HTML5**  
+El atributo rel (relación) en las etiquetas de enlace (a o link) define la relación entre el documento actual y el recurso al que se apunta. Se utiliza principalmente para mejorar la navegación, la accesibilidad, la optimización para motores de búsqueda (SEO) o para definir metadatos.  
+# **Una larga digresión sobre cómo los navegadores gestionan elementos desconocidos**  
+Cada navegador tiene una lista maestra de elementos HTML que soporta. Por ejemplo, la lista de Mozilla Firefox se almacena en nsElementTable.cpp. Los elementos que no están en esta lista se consideran "elementos desconocidos". Existen dos problemas fundamentales con elementos desconocidos:  
+En HTML5 se definen varios elementos nuevos que son elementos a nivel de bloque. Es decir, pueden contener otros elementos a nivel de bloque, y los navegadores compatibles con HTML5 los estilizarán como por defecto.   
